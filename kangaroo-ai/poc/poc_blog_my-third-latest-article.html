@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD ------------------------------------------------------------------------------------------ -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!-- Page title -->
+  <title>Kangaroo.AI</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="../src/img/favicon.png" />
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="../src/css/normalize.css">
+  <link rel="stylesheet" href="../src/css/layout.css">
+  <link rel="stylesheet" href="../src/css/sidebar.css">
+  <link rel="stylesheet" href="../src/css/content.css">
+  <link rel="stylesheet" href="../src/css/blog.css">
+
+  <!-- Font embeding -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Fontawesome.com kit's code -->
+  <script src="https://kit.fontawesome.com/436e3d6775.js" crossorigin="anonymous"></script>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<!-- BODY ------------------------------------------------------------------------------------------ -->
+<body>
+
+  <!-- Particules -->
+  <div id="particles-js" class="particules"></div>
+
+  <!-- Site Container -->
+  <div id="site-container" class="site-container">
+
+    <!-- Scrool progress indicator -->
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <!-- Header -->
+    <div id="header" class="header">
+      <img alt="Kangaroo.AI Brand Logo" src="../src/img/logo_1420x240.png">
+    </div>
+
+    <!-- Sidebar
+    <div id="sidebar" class="sidebar">
+  </div>
+-->
+
+<!-- Page content -->
+<div id="blog" class="blog">
+
+  <!-- --------------------------------------------- INSERT PAGE CONTENT HERE --------------------------------------------- -->
+
+  <!-- Page Title -->
+  <h1><img alt="Kangaroo Logo" src="../src/img/kangaroo-logo-250px.png"> Blog <span>Article</span></h1>
+
+  <!-- Article Page Layout -->
+  <div class="blog-article-container">
+
+    <div class="blog-article-content">
+
+      <!-- Blog Navbar -->
+      <div class="blog-navbar">
+        <div class="blog-navbtn">
+          <a title="Blog home" href="./poc_blog.html" target="_self" ><i class="fas fa-home"></i></a>
+        </div>
+        <div class="blog-navgroup">
+          <div class="blog-navbtn"><i class="far fa-heart"></i></div>
+          <div class="blog-navbtn"><i class="fab fa-linkedin"></i></div>
+          <div class="blog-navbtn"><i class="fab fa-twitter"></i></div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------- INSERT ARTICLE CONTENT HERE --------------------------------------------- -->
+
+      <img class="img-header" alt="Article header" src="../src/img/blog/headers/header_5.png">
+      <div id="blogCategory" class="blog-tag">Category</div>
+      <div id="blogProject" style="display:none">none</div>
+      <h1>My third latest article</h1>
+      <h2>November 24, 2021</h2>
+      <p>Lorem ipsum dolor sit amet. Non perferendis tempore aut necessitatibus molestias cum sequi repudiandae ea iure consequatur id nostrum natus aut minus consequuntur ut autem quaerat? Est dolorem voluptas ut repellendus quaerat et consequuntur rerum ad quasi consectetur et labore quae sit reprehenderit harum est quia. Eum voluptatum dolor aut autem cumque eos fugit debitis qui odio quaerat.
+
+        Id quia quis aut atque accusantium et voluptatem quas. At debitis assumenda et quaerat internos ea quos neque est voluptatibus error est quasi similique. Et dolor quod At voluptates galisum 33 expedita iste?
+
+        Qui quod accusantium ea sequi temporibus cum reiciendis neque ex quia praesentium in sapiente rerum ut quaerat exercitationem et debitis voluptatum. Aut beatae quis et rerum obcaecati est exercitationem aliquid eum architecto ipsa aut consequatur reprehenderit sit galisum aut illum laudantium. Et voluptatem iste ut voluptatum fugit 33 quia laborum aut alias tenetur eos assumenda tenetur aut odio quia sed minima veniam. Rem iure dolor id quibusdam quidem id debitis reiciendis vel maxime reprehenderit sit modi numquam est cumque nemo!
+      </p>
+
+      <img class="img-body" src="../src/img/blog/headers/header_5.png">
+      <p class="img-legend">Image legend</p>
+
+      <p>Lorem ipsum dolor sit amet. Non perferendis tempore aut necessitatibus molestias cum sequi repudiandae ea iure consequatur id nostrum natus aut minus consequuntur ut autem quaerat? Est dolorem voluptas ut repellendus quaerat et consequuntur rerum ad quasi consectetur et labore quae sit reprehenderit harum est quia. Eum voluptatum dolor aut autem cumque eos fugit debitis qui odio quaerat.</p>
+
+
+      <!-- --------------------------------------------- END ARTICLE CONTENT HERE --------------------------------------------- -->
+    </div>
+
+    <!-- Sidebar -->
+    <div class="blog-article-sidebar">
+
+      <!-- Project Card -->
+      <div id="projectCard" class="blog-sidebar-card project-card">
+        <div class="blog-sidebar-card-header">
+          <h2>Project card</h2>
+        </div>
+        <div id="projectCardText" class="blog-sidebar-card-text">
+          <p>In case the post is linked to a specific project, we'll put a small project card here with link to the project section.</p>
+        </div>
+      </div>
+
+      <!-- Related Posts Card -->
+      <div id="relatedPost" class="blog-sidebar-card">
+        <div class="blog-sidebar-card-header">
+          <h2>Related posts</h2>
+        </div>
+        <!-- ARTICLE TEASER WILL BE ADDED WITH JAVASCRIPT -->
+      </div>
+
+      <!-- Latest Posts Card -->
+      <div id="latestPost" class="blog-sidebar-card">
+        <div class="blog-sidebar-card-header">
+          <h2>Latest posts</h2>
+        </div>
+        <!-- ARTICLE TEASER WILL BE ADDED WITH JAVASCRIPT -->
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- --------------------------------------------- END PAGE CONTENT --------------------------------------------- -->
+</div>
+
+<!-- Go to top button -->
+<button onclick="topFunction()" id="goTop_btn" title="Go to top">Top</button>
+
+<!-- Footer -->
+<div id="footer" class="footer">
+  <p class="copyright">© Copyright 2021 - Kangaroo.AI</p>
+  <p class="tagline">There is an Art to problem solving.</p>
+</div>
+
+</div>
+
+<!--
+<script>
+$(function(){
+$("#sidebar").load("nav.html");
+});
+</script>
+-->
+
+<script src="../src/js/particles.js"></script>
+<script src="../src/js/app.js"></script>
+<script src="../src/js/scroll_poc.js"></script>
+<script src="../src/js/blog.js"></script>
+
+</body>
+</html>

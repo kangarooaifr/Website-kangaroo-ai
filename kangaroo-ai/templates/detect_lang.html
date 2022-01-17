@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD ------------------------------------------------------------------------------------------ -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <!-- Page title -->
+    <title>Kangaroo.AI</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="src/img/favicon.png" />
+</head>
+
+<!-- BODY ------------------------------------------------------------------------------------------ -->
+<body>
+
+  <script>
+  	myFunction()
+  
+    function myFunction() {
+		
+		// get browser language
+		var x = navigator.language;
+  		console.log('Browser language = ',x);
+		  
+		// redirect
+		if(x == 'fr'){
+			window.open("http://www.kangaroo-ai.fr/fr/accueil.html", "_self");
+		}else{
+			window.open("http://www.kangaroo-ai.fr/en/home.html", "_self");
+		}
+	}
+  </script>
+
+</body>
+</html>

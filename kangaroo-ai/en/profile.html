@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD ------------------------------------------------------------------------------------------ -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <!-- Description for search engines -->
+    <meta name="description" content="Machine Learning | Data Scientist freelance. The best time when to start solving problems would be now!." />
+    
+    <!-- Page title -->
+    <title>Kangaroo.AI | Profile</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../src/img/favicon.png" />
+    
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/layout.css">
+    <link rel="stylesheet" href="../src/css/sidebar.css">
+    <link rel="stylesheet" href="../src/css/content.css">
+    
+    <!-- Font embeding -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Fontawesome.com kit's code -->
+    <script src="https://kit.fontawesome.com/436e3d6775.js" crossorigin="anonymous"></script>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<!-- BODY ------------------------------------------------------------------------------------------ -->
+<body>
+
+  <!-- Particules -->
+  <div id="particles-js" class="particules"></div>
+  
+  <!-- Site Container -->
+  <div id="site-container" class="site-container">
+
+    <!-- Scrool progress indicator -->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    
+    <!-- Header -->
+    <div id="header" class="header">
+        <img alt="Kangaroo.AI Brand Logo" src="../src/img/logo_1420x240.png">
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar"> 
+      <!-- Navigation bar --> 
+      <!-- end of Navigation bar --> 
+    </div>
+
+    <!-- Page content -->
+    <div id="content" class="content"> 
+      <!-- --------------------------------------------- INSERT PAGE CONTENT HERE --------------------------------------------- -->
+      
+      
+      <!-- PROFILE -->
+      <h1 id="trainings"><img alt="Kangaroo Logo" src="../src/img/kangaroo-logo-250px.png"> My <span>Profile</span></h1>
+      
+      <!-- Control buttons -->
+      <div id="myBtnContainer">
+      	<button id="all" class="btn" onclick="filterSelection('all')">All</button>
+      	<button id="education" class="btn" onclick="filterSelection('education')">Education</button>
+        <button id="support" class="btn" onclick="filterSelection('support')">Tech. Support roles</button>
+        <button id="quality" class="btn" onclick="filterSelection('quality')">QA Leader roles</button>
+        <button id="datascience" class="btn" onclick="filterSelection('datascience')">Data Science & AI</button>
+        <button id="sabbatical" class="btn" onclick="filterSelection('sabbatical')">Sabbatical</button>
+        <button id="aspiration" class="btn" onclick="filterSelection('aspiration')">Aspirations</button>
+      </div>
+      <div id="myBtnContainer2">
+      	<button class="btn" onclick="collapseAll()">Collapse all</button>
+      	<button class="btn" onclick="expandAll()">Expand all</button>
+      </div>
+      
+      <!-- The filterable elements -->
+      <div class="filterList">
+      
+      	<!-- Filterable element -->
+      	<div class="filter education">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="experience-title">
+                		<h2>Education & Internships</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                        <p class="small">1994 - 2000</p>
+                    </div>
+                    <div class="experience-title-tags">
+                    	<div>
+                            <div class="tag">ESTACA</div>
+                		</div>
+                    	<div>
+                            <div class="tag">Paris</div>
+                            <div class="tag">Chicago</div>
+                            <div class="tag">Montreal</div>
+                		</div>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="experience-body">
+                        <div class="experience-body-tags">
+                            <h3>Tags</h3>
+                            <div class="tag">Automotive</div>
+                            <div class="tag">Engineering</div>
+                        </div>
+                        <div class="experience-body-summary">
+                            <h3 style="display:inline-block; margin-right:10px;">ESTACA</h3>
+                            <a title="Link to website" href="https://www.estaca.fr/en/" target="_blank" >
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <p>Aeronautic Aerospace Automotive Railway Engineering School - Paris, France.</p>
+                            <p style="font-style: italic; display:inline-block; margin-right:10px">Specialization: Automotive, Structure and Materials.</p>
+                        </div>
+                    </div>
+                    <div class="experience-body-details">
+                    	<h3>Internships</h3>
+	                    <ul>
+                        	<li style="margin-bottom:10px">
+                            	<span>SK Hand Tools</span> Corporation - Chicago, IL USA<br>
+                                <p style="font-style:italic">3-month internship: implementation of a distribution center.</p>
+                            </li>
+                        	<li>
+                            	<span>ACT</span> - Montreal, Canada<br>
+                                <p style="font-style:italic">6-month internship/work: PLM softwares.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+      
+      	<!-- Filterable element -->
+      	<div class="filter support">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="experience-title">
+                		<h2>idCAD Consulting</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                        <p class="small">2000 - 2001</p>
+                    </div>
+                    <div class="experience-title-tags">
+                    	<div>
+                            <div class="tag">Paris</div>
+                		</div>
+                    	<div>
+                            <div class="tag">Montreal</div>
+                		</div>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="experience-body">
+                        <div class="experience-body-tags">
+                            <h3>Tags</h3>
+                            <div class="tag">PLM</div>
+                            <div class="tag">Support</div>
+                        </div>
+                        <div class="experience-body-summary">
+                            <h3>idCAD Consulting</h3>
+                            <p style="display:inline-block"><a href="#" class="tooltip">PLM<span>PLM: Product Lifecycle Management</span></a> Consulting company - Montreal, Canada.</p>
+                            <p style="font-style: italic">Role: PLM Support Engineer.</p>
+                        </div>
+                    </div>
+                    <div class="experience-body-details">
+                    	<h3>Assignment</h3>
+	                    <ul>
+                        	<li>
+                            	<span>PSA Peugeot Citroën</span> - Paris, France<br>
+                                <p style="font-style:italic">8-month assignment: PLM deployment project, methodologies and user support.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+      
+      	<!-- Filterable element -->
+      	<div class="filter support">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="experience-title">
+                		<h2>Dassault Systèmes <span style="font-weight:normal">| Support Engineer</span></h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                        <p class="small">2002 - 2008</p>
+                    </div>
+                    <div class="experience-title-tags">
+                    	<div>
+                            <div class="tag">Dassault Systèmes</div>
+                		</div>
+                    	<div>
+                            <div class="tag">Paris</div>
+                		</div>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="experience-body">
+                        <div class="experience-body-tags">
+                            <h3>Tags</h3>
+                            <div class="tag">PDM</div>
+                            <div class="tag">3D</div>
+                            <div class="tag">Integration</div>
+                            <div class="tag">Tech. Support</div>
+                            <div class="tag">BMW</div>
+                        </div>
+                        <div class="experience-body-summary">
+                            <h3 style="display:inline-block; margin-right:10px;">Dassault Systèmes</h3>
+                            <a title="Link to website" href="https://www.3ds.com/" target="_blank" >
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <p>3D Software Development Company - Paris, France.</p>
+                            <p style="font-style: italic">Role: Technical Support Engineer on <a href="#" class="tooltip">ENOVIAvpm<span>Product Data Management Software</span></a> & <a href="#" class="tooltip">CATIAV5<span>3D Design Software</span></a> Integration products.</p>
+                        </div>
+                    </div>
+                    <div class="experience-body-details">
+                    	<h3>Mission</h3>
+	                    <ul>
+                        	<li>Support focal point for <span>BMW</span> Parametric Car Project</li>
+                        	<li>Increase product quality: from convergence to maturity</li>
+                        	<li>Manage E2E service request</li>
+                        	<li>Ensure customer satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+      
+      	<!-- Filterable element -->
+      	<div class="filter support">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="experience-title">
+                		<h2>Dassault Systèmes <span style="font-weight:normal">| Support Manager</span></h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                        <p class="small">2008 - 2015</p>
+                    </div>
+                    <div class="experience-title-tags">
+                    	<div>
+                            <div class="tag">Dassault Systèmes</div>
+                		</div>
+                    	<div>
+                            <div class="tag">Paris</div>
+                		</div>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="experience-body">
+                        <div class="experience-body-tags">
+                            <h3>Tags</h3>
+                            <div class="tag">PLM</div>
+                            <div class="tag">Integration</div>
+                            <div class="tag">Tech. Support</div>
+                        </div>
+                        <div class="experience-body-summary">
+                            <h3 style="display:inline-block; margin-right:10px;">Dassault Systèmes</h3>
+                            <a title="Link to website" href="https://www.3ds.com/" target="_blank" >
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <p>3D Software Development Company - Paris, France.</p>
+                            <p style="font-style: italic">Role: Technical Support Manager on Transition & Exchanges products.</p>
+                        </div>
+                    </div>
+                    <div class="experience-body-details">
+                    	<h3>Transition & Exchanges</h3>
+                    	<p>Massive data transfer (import/export) and data migration softwares.</p>
+                    	<h3>Mission</h3>
+	                    <ul>
+                        	<li>Support technical focal point for <span>Miele</span> and <span>Claas</span> production deployment projects</li>
+                        	<li>Manage customer critical situations</li>
+                        	<li>Increase product quality: from convergence to maturity</li>
+                            <li>Increase product scalability and supportability (big data)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+      
+      	<!-- Filterable element -->
+      	<div class="filter quality">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="experience-title">
+                		<h2>Dassault Systèmes <span style="font-weight:normal">| QA Senior Manager</span></h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                        <p class="small">2016 - 2017</p>
+                    </div>
+                    <div class="experience-title-tags">
+                    	<div>
+                            <div class="tag">Dassault Systèmes</div>
+                		</div>
+                    	<div>
+                            <div class="tag">Paris</div>
+                		</div>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="experience-body">
+                        <div class="experience-body-tags">
+                            <h3>Tags</h3>
+                            <div class="tag">QA Leader</div>
+                            <div class="tag">Quality</div>
+                            <div class="tag">Team manager</div>
+                        </div>
+                        <div class="experience-body-summary">
+                            <h3 style="display:inline-block; margin-right:10px;">Dassault Systèmes</h3>
+                            <a title="Link to website" href="https://www.3ds.com/" target="_blank" >
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <p>3D Software Development Company - Paris, France.</p>
+                            <p style="font-style: italic">Roles: <a href="#" class="tooltip">ENOVIA<span>ENOVIA is a brand inside DS</span></a> QA Leader for Legacy servers, Transition & Exchanges products / Team manager.</p>
+                        </div>
+                    </div>
+                    <div class="experience-body-details">
+                    	<h3>Legacy servers</h3>
+                    	<p>ENOVIAvpm, ENOVIAV5 and SmarTeam (Product Data Management & Product Lifecycle Management softwares)</p>
+                    	<h3>Transition & Exchanges</h3>
+                    	<p>Massive data transfer (import/export) and data migration softwares.</p>
+                    	<h3>Mission</h3>
+	                    <ul>
+                        	<li>Product quality responsible</li>
+                        	<li>Software program convergence</li>
+                        	<li>Test model definition & update</li>
+                            <li>Automation adoption</li>
+                        	<li>Brand quality follow up (exec. meetings)</li>
+                        </ul>
+                        <h3>Team Manager</h3>
+	                    <ul>
+                        	<li>Managing 35 people (incl. 1 apprentice) in France & India</li>
+                        </ul>
+                        <h3>Achievements & results</h3>
+	                    <ul>
+                        	<li>Avoid recurrent crisis at program closure (team spirit, anticipation, follow-up, alert)</li>
+                        	<li>Rationalize operations (shorten/merge/refocus meetings, avoid creating work to each other)</li>
+                        	<li>Reengineer a customer data test project (to solve bottelneck and reach next level)</li>
+                        	<li>Personalized management (based on working styles, maturities, skills)</li>
+                        	<li>People development (delegate to increase skills, management trust, make people comfortable with raising new ideas)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+      
+      	<!-- Filterable element -->
+      	<div class="filter sabbatical">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="experience-title">
+                		<h2>Sabbatical Year</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                        <p class="small">2018</p>
+                    </div>
+                    <div class="experience-title-tags">
+                    	<div>
+                            <div class="tag">Explore</div>
+                		</div>
+                    	<div>
+                            <div class="tag">Around the World</div>
+                		</div>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="experience-body">
+                        <div class="experience-body-tags">
+                            <h3>Tags</h3>
+                            <div class="tag">Travel</div>
+                            <div class="tag">Explore</div>
+                            <div class="tag">Discover</div>
+                        </div>
+                        <div class="experience-body-summary">
+                            <h3>Why</h3>
+                            <p>I decided to have a year off work, explore the world and take time to think about the next steps.</p>
+                        </div>
+                    </div>
+                    <div class="experience-body-details">
+                    	<h3>Travel, explore, discover</h3>
+	                    <ul>
+                        	<li>3-month trip: Australia, Indonesia, Malaysia, Singapore, Thailand, Vietnam</li>
+                        	<li>3-month trip: Norway, USA, Canada, Panama, Colombia, Equator, Peru, Bolivia, Chile, Argentina, Brazil</li>
+                        	<li>2-month trip: Australia, New-Zealand</li>
+                            <p style="margin-top:10px">A travel map is available here:<a title="Link to map" href="https://filhype.travelmap.net/" target="_blank">
+                            	<i class="fas fa-map-marked-alt"></i>
+                            </a></p>
+                            
+                        </ul>
+                    	<h3>Read, learn</h3>
+	                    <ul>
+                        	<li>Emotional Intelligence (EQ), neurological thinking process</li>
+                        	<li>Languages: Spanish, Portuguese, Norwegian</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+      
+      	<!-- Filterable element -->
+      	<div class="filter education datascience">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="experience-title">
+                		<h2>Data Science & AI</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                        <p class="small">2019 - 2020</p>
+                    </div>
+                    <div class="experience-title-tags">
+                    	<div>
+                            <div class="tag">Coursera</div>
+                		</div>
+                    	<div>
+                            <div class="tag">Paris</div>
+                		</div>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="experience-body">
+                        <div class="experience-body-tags">
+                            <h3>Tags</h3>
+                            <div class="tag">eLearning</div>
+                            <div class="tag">Data Science</div>
+                            <div class="tag">AI</div>
+                            <div class="tag">Machine Learning</div>
+                        </div>
+                        <div class="experience-body-summary">
+                            <h3>Why</h3>
+                            <p>Back to work, the QA activity was in the process to be almost fully automatized. By automatized, I mean that
+                            the manual test steps are litteraly turned into automatic test steps. While this might be an interresting project, I don't think that this
+                            activity is for me since it usually does not involve a global re-think of the test process.</p><br>
+                            <p>On the other hand, a new technical revolution is on its way.</p>
+                            <p style="font-style:italic">"Artificial Intelligence is the new electricity" says Pr Andrew NG (Stanford University).</p>
+                        </div>
+                    </div>
+                    <div class="experience-body-details">
+                    	<h3>Training plan</h3>
+	                    <ul>
+                        	<li>A detailed view of my training plan is available here:<a class="click" title="Link to training plan" href="trainings.html?filter=all">click</a></li>
+                        </ul>
+                    	<h3>Projects</h3>
+	                    <ul>
+                        	<li>The projects I am working on are available here:<a title="Link to projects" class="click" href="projects.html?filter=all">click</a></li>
+                        </ul>
+                    	<h3>Skills</h3>
+	                    <ul>
+                        	<li>An overview of my skills is availble here:<a title="Link to skills" class="click" href="skills.html?filter=all">click</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+      
+      	<!-- Filterable element -->
+      	<div class="filter aspirations">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="experience-title">
+                		<h2>Aspirations</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                        <p class="small">2021</p>
+                    </div>
+                    <div class="experience-title-tags">
+                    	<div>
+                            <div class="tag">Solve problems</div>
+                		</div>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="experience-body">
+                        <div class="experience-body-tags">
+                            <h3>Tags</h3>
+                            <div class="tag">Quality</div>
+                            <div class="tag">Ethics</div>
+                            <div class="tag">Global Thinking</div>
+                        </div>
+                        <div class="experience-body-summary">
+                            <h3>Solve problems!</h3>
+                            <p>As my tagline says, there is an Art to problem solving.</p>
+                            <p>This art includes human and ethical rules ; in particular a solution should not create a bigger issue later on or to someone else.</p>
+                        </div>
+                    </div>
+                    <div class="experience-body-details">
+                    	<h3>Mentorship</h3>
+                        <ul>
+                        	<li>Mentor at:<a title="Link to website" class="click" href="https://www.deeplearning.ai/" target="_blank">DeepLearning.AI</a><br>
+                        	on specialization:<a title="Link to website" class="click" href="https://www.coursera.org/specializations/tensorflow-data-and-deployment" target="_blank">TensorFlow: Data and Deployment Specialization</a></li>
+                        </ul>
+                    	<h3>What</h3>
+	                    <ul>
+                        	<li>Product quality and completeness</li>
+                        	<li>Share technical knowledge and customer experience (train / coach people)</li>
+                        	<li>Global thinking: replace short sighted views by overall solutions</li>
+                        </ul>
+                    	<h3>How</h3>
+	                    <ul>
+                        	<li>Stimulating work environment</li>
+                            <li>Autonomous worker</li>
+                            <li>Make work meaningful, with global views and long term vision</li>
+                            <li>Building a team you will be happy to join on Mondays and leave with a sense of accomplishment on Fridays</li>
+                        </ul>
+                        <h3>Where</h3>
+	                    <ul>
+                        	<li>Open to international environments</li>
+                        	<li>Open to work from anywhere</li>
+                        </ul>
+                        <h3>When</h3>
+	                    <ul>
+                        	<li style="font-style:italic">"The perfect times when to start would be now." said on of my best friend</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+      
+      	<!-- Filterable element -->
+      	<div class="filter education">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="experience-title">
+                		<h2>Languages</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                    </div>
+                    <div class="experience-title-tags">
+                    	<div>
+                            <div class="tag">French</div>
+                		</div>
+                    	<div>
+                            <div class="tag">English</div>
+                		</div>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="experience-body">
+                        <div class="experience-body-tags">
+                            <h3>Tags</h3>
+                            <div class="tag">Merci</div>
+                            <div class="tag">Thank You</div>
+                            <div class="tag">Gracias</div>
+                            <div class="tag">Obrigado</div>
+                            <div class="tag">Takk</div>
+                        </div>
+                        <div class="experience-body-summary">
+                            <h3>Learn</h3>
+                            <p>I am very interrested in learning new languages as it helps to discover new culture.</p>
+                        </div>
+                    </div>
+                    <div class="experience-body-details">
+                    	<h3>Details</h3>
+	                    <ul>
+                        	<li>French: Native speaker</li>
+                        	<li>English: Proficient user C1<a class="click" title="Link to CEFR levels" 
+                            href="https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale" target="_blank">(CEFR)</a></li>
+                            
+                            <br>
+                        	<p>I am also learning Spanish, Portuguese (Brazilian dialect) and Norwegian (Bokmål dialect) with basic levels.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+      
+      </div>
+      <!-- The filterable elements -->
+      
+      <!-- --------------------------------------------- END PAGE CONTENT --------------------------------------------- --> 
+    </div>
+    
+    <!-- Footer -->
+    <div id="footer" class="footer">
+      <p class="copyright">© Copyright 2021 - Kangaroo.AI</p>
+      <p class="tagline">There is an Art to problem solving.</p>
+    </div>
+    
+  </div>
+  
+  <script>
+      $(function(){
+          $("#sidebar").load("nav.html");
+      });
+  </script> 
+  <script src="../src/js/particles.js"></script> 
+  <script src="../src/js/app.js"></script>
+  <script src="../src/js/scroll.js"></script>
+  <script src="../src/js/filterdiv.js"></script>
+  <script src="../src/js/expandable.js"></script>
+
+</body>
+</html>

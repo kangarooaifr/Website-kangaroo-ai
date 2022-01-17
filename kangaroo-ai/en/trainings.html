@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD ------------------------------------------------------------------------------------------ -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <!-- Description for search engines -->
+    <meta name="description" content="Machine Learning | Data Scientist freelance training plan." />
+    
+    <!-- Page title -->
+    <title>Kangaroo.AI | Trainings</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../src/img/favicon.png" />
+    
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/layout.css">
+    <link rel="stylesheet" href="../src/css/sidebar.css">
+    <link rel="stylesheet" href="../src/css/content.css">
+    
+    <!-- Font embeding -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Fontawesome.com kit's code -->
+    <script src="https://kit.fontawesome.com/436e3d6775.js" crossorigin="anonymous"></script>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<!-- BODY ------------------------------------------------------------------------------------------ -->
+<body>
+
+  <!-- Particules -->
+  <div id="particles-js" class="particules"></div>
+  
+  <!-- Site Container -->
+  <div id="site-container" class="site-container">
+
+    <!-- Scrool progress indicator -->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    
+    <!-- Header -->
+    <div id="header" class="header">
+        <img alt="Kangaroo.AI Brand Logo" src="../src/img/logo_1420x240.png">
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar"> 
+      <!-- Navigation bar --> 
+      <!-- end of Navigation bar --> 
+    </div>
+
+    <!-- Page content -->
+    <div id="content" class="content"> 
+      <!-- --------------------------------------------- INSERT PAGE CONTENT HERE --------------------------------------------- -->
+      
+      <!-- TRAININGS -->
+      <h1 id="trainings"><img alt="Kangaroo Logo" src="../src/img/kangaroo-logo-250px.png"> Training <span>Plan</span></h1>
+      
+      <!-- Control buttons -->
+      <div id="myBtnContainer">
+      	<button id="all" class="btn" onclick="filterSelection('all')">All</button>
+      	<button id="beginner" class="btn" onclick="filterSelection('beginner')">Beginner</button>
+        <button id="intermediate" class="btn" onclick="filterSelection('intermediate')">Intermediate</button>
+        <button id="advanced" class="btn" onclick="filterSelection('advanced')">Advanced</button>
+      </div>
+      <div id="myBtnContainer2">
+      	<button class="btn" onclick="collapseAll()">Collapse all</button>
+      	<button class="btn" onclick="expandAll()">Expand all</button>
+      </div>
+      
+      <!-- The filterable elements -->
+      <div class="filterList">
+      
+      	<!-- Filterable element -->
+      	<div id="elements-of-ai" class="filter beginner">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="training-title">
+                		<h2>Elements of AI</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                    </div>
+                    <div class="training-title-tags">
+                    	<div>
+                            <div class="tag">course</div>
+	    	          		<div class="tag">beginner</div>
+                		</div>
+                    	<div>
+                            <div class="tag">University of Helsinki</div>
+                            <div class="tag">Reaktor</div>
+                		</div>
+                	</div>
+                    <div class="training-title-links">
+                        <h2>
+                            <a title="Link to course" href="https://course.elementsofai.com" target="_blank" >
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a title="Link to certificate" href="https://certificates.mooc.fi/validate/2zyutw5vyuq" target="_blank" >
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </h2>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="training-body-tags">
+                    	<h3>Tags</h3>
+    	          		<div class="tag">ai</div>
+    	          		<div class="tag">machine learning</div>
+    	          		<div class="tag">neural network</div>
+                    </div>
+                    <div class="training-body-summary">
+                    	<h3>Summary</h3>
+	                    <p>Elements of AI is a free online course offered by the University of Helsinki / Reaktor introducing to artificial intellegence and machine learning.</p>
+                    </div>
+                    <div class="training-body-courses">
+                    	<h3>Course</h3>
+	                    <ol>
+                        	<li>Elements of AI</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+        
+        <!-- Filterable element -->
+      	<div class="filter beginner">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="training-title">
+                		<h2>AI For Everyone</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                    </div>
+                    <div class="training-title-tags">
+                    	<div>
+    	          			<div class="tag">course</div>
+    	          			<div class="tag">beginner</div>
+                        </div>
+                    	<div>
+    	          			<div class="tag">DeepLearning.AI</div>
+    	          			<div class="tag">Coursera</div>
+                        </div>
+                	</div>
+                    <div class="training-title-links">
+                        <h2>
+                            <a title="Link to course" href="https://www.coursera.org/learn/ai-for-everyone" target="_blank" >
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </h2>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="training-body-tags">
+                    	<h3>Tags</h3>
+    	          		<div class="tag">ai</div>
+    	          		<div class="tag">project</div>
+    	          		<div class="tag">company</div>
+    	          		<div class="tag">society</div>
+                    </div>
+                    <div class="training-body-summary">
+                    	<h3>Summary</h3>
+	                    <p>AI For Everyone is a non-technical course offered by DeepLearning.AI on Coursera platform. Focus is set on how AI interacts with projects, teams & organizations, companies and the society.</p>
+                    </div>
+                    <div class="training-body-courses">
+                    	<h3>Content</h3>
+	                    <ol>
+                        	<li>What is AI?</li>
+                        	<li>Building AI Projects</li>
+                        	<li>Building AI In Your Company</li>
+                        	<li>AI and Society</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+        
+        <!-- Filterable element -->
+      	<div class="filter beginner">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="training-title">
+                		<h2>Agile Software Development</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                    </div>
+                    <div class="training-title-tags">
+                    	<div>
+    	          			<div class="tag">course</div>
+    	          			<div class="tag">beginner</div>
+                        </div>
+                    	<div>
+    	          			<div class="tag">University of Minnesota</div>
+    	          			<div class="tag">Coursera</div>
+                        </div>
+                	</div>
+                    <div class="training-title-links">
+                        <h2>
+                            <a title="Link to course" href="https://www.coursera.org/learn/agile-software-development" target="_blank" >
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </h2>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="training-body-tags">
+                    	<h3>Tags</h3>
+    	          		<div class="tag">software development</div>
+    	          		<div class="tag">agile</div>
+    	          		<div class="tag">scrum</div>
+                    </div>
+                    <div class="training-body-summary">
+                    	<h3>Summary</h3>
+	                    <p>Agile Software Development is a course offered by the University of Minnesota on Coursera platform. This is an introduction to the Agile software development philosophy and the Scrum method.</p>
+                    </div>
+                    <div class="training-body-courses">
+                    	<h3>Content</h3>
+	                    <ol>
+                        	<li>Agile Fundamentals</li>
+                        	<li>Requirements and Planning</li>
+                        	<li>Scrum</li>
+                        	<li>XP and Course Wrap-up</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+        
+      	<!-- Filterable element -->
+      	<div class="filter intermediate">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="training-title">
+                		<h2>Machine Learning</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                    </div>
+                    <div class="training-title-tags">
+                    	<div>
+                            <div class="tag">course</div>
+	    	          		<div class="tag">intermediate</div>
+                		</div>
+                    	<div>
+                            <div class="tag">Stanford University</div>
+                            <div class="tag">Coursera</div>
+                		</div>
+                	</div>
+                    <div class="training-title-links">
+                        <h2>
+                            <a title="Link to course" href="https://www.coursera.org/learn/machine-learning" target="_blank" >
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a title="Link to certificate" href="https://coursera.org/share/00c5d090d5df1ef8cddf5530ec42ceb9" target="_blank" >
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </h2>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="training-body-tags">
+                    	<h3>Tags</h3>
+    	          		<div class="tag">ai</div>
+    	          		<div class="tag">machine learning</div>
+    	          		<div class="tag">logistic regression</div>
+    	          		<div class="tag">regularization</div>
+    	          		<div class="tag">neural network</div>
+                    </div>
+                    <div class="training-body-summary">
+                    	<h3>Summary</h3>
+	                    <p>Machine Learning is THE reference course offered by Stanford University on Coursera and instructed by Pr Andrew Ng. This must-do deep dives into logictic regression and regularization, introduces to neural networks, supervised and unsupervised learning.</p>
+                    </div>
+                    <div class="training-body-courses">
+                    	<h3>Content</h3>
+	                    <ol>
+                        	<li>Linear & logistic Regressions</li>
+                        	<li>Regularization</li>
+                        	<li>Neural Networks</li>
+                        	<li>Support Vector Machines</li>
+                        	<li>Recommender Systems</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+        
+      	<!-- Filterable element -->
+      	<div class="filter advanced">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="training-title">
+                		<h2>Deep Learning</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                    </div>
+                    <div class="training-title-tags">
+                    	<div>
+                            <div class="tag">specialization</div>
+	    	          		<div class="tag">advanced</div>
+                		</div>
+                    	<div>
+                            <div class="tag">DeepLearning.AI</div>
+                            <div class="tag">Coursera</div>
+                		</div>
+                	</div>
+                    <div class="training-title-links">
+                        <h2>
+                            <a title="Link to specialization" href="https://www.coursera.org/specializations/deep-learning" target="_blank" >
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a title="Link to certificate" href="https://coursera.org/share/03645faff2a8d993f1f43bf5300f1708" target="_blank" >
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </h2>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="training-body-tags">
+                    	<h3>Tags</h3>
+    	          		<div class="tag">ai</div>
+    	          		<div class="tag">machine learning</div>
+    	          		<div class="tag">deep learning</div>
+    	          		<div class="tag">neural network</div>
+    	          		<div class="tag">convolutional neural network</div>
+    	          		<div class="tag">reccurent neural network</div>
+    	          		<div class="tag">backpropagation</div>
+                        <div class="tag">hyperparameter tuning</div>
+                    </div>
+                    <div class="training-body-summary">
+                    	<h3>Summary</h3>
+	                    <p>Deep Learning Specialization is offered by DeepLearning.AI on Coursera. This program, instructed by Pr Andrew Ng, is a foundational layer of knowledge about Deep Learning and Neural Networks, with a strong focus on hyperparameter tuning strategies.</p><br>
+                        <p>A Coursera specialization is a series of courses built to master a skill. Each course has it's own certificate. The specialization certificate is delivered when all the courses are completed with success.</p>
+                    </div>
+                    <div class="training-body-courses">
+                    	<h3>Courses</h3>
+	                    <ol>
+                        	<li>Neural Networks and Deep Learning
+                                <a title="Link to course" href="https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/d668a4a92a6d74de059dd3b7db77b35f" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Improving Deep Neural Networks
+                                <a title="Link to course" href="https://www.coursera.org/learn/deep-neural-network?specialization=deep-learning" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/d33e406616bfde70edb88eff781fe343" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Structuring Machine Learning Projects
+                                <a title="Link to course" href="https://www.coursera.org/learn/machine-learning-projects?specialization=deep-learning" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/5d57b8112a43c9b7b07605d3949d573c" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Convolutional Neural Networks
+                                <a title="Link to course" href="https://www.coursera.org/learn/convolutional-neural-networks?specialization=deep-learning" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/83419f365635600398619e0a14b804ed" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Sequence Models
+                                <a title="Link to course" href="https://www.coursera.org/learn/nlp-sequence-models?specialization=deep-learning" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/9421b349dad7cf200a53fb16be50cb7f" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+        
+      	<!-- Filterable element -->
+      	<div class="filter advanced">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="training-title">
+                		<h2>TensorFlow Developer</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                    </div>
+                    <div class="training-title-tags">
+                    	<div>
+                            <div class="tag">professional certificate</div>
+	    	          		<div class="tag">advanced</div>
+                		</div>
+                    	<div>
+                            <div class="tag">DeepLearning.AI</div>
+                            <div class="tag">Coursera</div>
+                		</div>
+                	</div>
+                    <div class="training-title-links">
+                        <h2>
+                            <a title="Link to professional certificate" href="https://www.coursera.org/professional-certificates/tensorflow-in-practice" target="_blank" >
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a title="Link to certificate" href="https://coursera.org/share/a9876c0bf7bf724f7537fb667eb5ec44" target="_blank" >
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </h2>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="training-body-tags">
+                    	<h3>Tags</h3>
+    	          		<div class="tag">ai</div>
+    	          		<div class="tag">machine learning</div>
+    	          		<div class="tag">Python</div>
+    	          		<div class="tag">TensorFlow</div>
+    	          		<div class="tag">neural network</div>
+    	          		<div class="tag">NLP</div>
+    	          		<div class="tag">tokenization</div>
+    	          		<div class="tag">computer vision</div>
+                    </div>
+                    <div class="training-body-summary">
+                    	<h3>Summary</h3>
+	                    <p>The DeepLearning.AI TensorFlow Developer Professional Certificate program on Coursera teaches applied machine learning skills with TensorFlow to build machine learning models. It contains various real-world scenarios through Python programming assignments.</p><br>
+                        <p>A Coursera Professional Certificate is a series of courses built to become job ready. Each course has it's own certificate. The professional certificate is delivered when all the courses are completed with success.</p>
+                    </div>
+                    <div class="training-body-courses">
+                    	<h3>Courses</h3>
+	                    <ol>
+                        	<li>Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning
+                                <a title="Link to course" href="https://www.coursera.org/learn/introduction-tensorflow?specialization=tensorflow-in-practice" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/4a6648d4ca091ae9b4340f47819edead" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Convolutional Neural Networks in TensorFlow
+                                <a title="Link to course" href="https://www.coursera.org/learn/convolutional-neural-networks-tensorflow?specialization=tensorflow-in-practice" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/86ed9653a42a0e5d6c544465777f1970" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Natural Language Processing in TensorFlow
+                                <a title="Link to course" href="https://www.coursera.org/learn/natural-language-processing-tensorflow?specialization=tensorflow-in-practice" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/34e95f41ad56da7620e9c2025a31bc2c" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Sequences, Time Series and Prediction
+                                <a title="Link to course" href="https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction?specialization=tensorflow-in-practice" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/7b482837690886ae9f32b92e0ad565f6" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+        
+      	<!-- Filterable element -->
+      	<div class="filter advanced">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="training-title">
+                		<h2>TensorFlow: Data and Deployment</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                    </div>
+                    <div class="training-title-tags">
+                    	<div>
+                            <div class="tag">specialization</div>
+	    	          		<div class="tag">advanced</div>
+                		</div>
+                    	<div>
+                            <div class="tag">DeepLearning.AI</div>
+                            <div class="tag">Coursera</div>
+                		</div>
+                	</div>
+                    <div class="training-title-links">
+                        <h2>
+                            <a title="Link to specialization" href="https://www.coursera.org/specializations/tensorflow-data-and-deployment" target="_blank" >
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a title="Link to certificate" href="https://coursera.org/share/09c1b0b9efe2bcc48af90a54f1da9bdc" target="_blank" >
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </h2>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="training-body-tags">
+                    	<h3>Tags</h3>
+    	          		<div class="tag">ai</div>
+    	          		<div class="tag">machine learning</div>
+    	          		<div class="tag">TensorFlow</div>
+    	          		<div class="tag">deployment</div>
+    	          		<div class="tag">TensorFlow.js</div>
+    	          		<div class="tag">JavaScript</div>
+    	          		<div class="tag">TensorFlow Lite</div>
+    	          		<div class="tag">smartphone</div>
+                    </div>
+                    <div class="training-body-summary">
+                    	<h3>Summary</h3>
+	                    <p>The TensorFlow: Data and Deployment Specialization is offered by DeepLearning.AI on Coursera. The program navigates through deployment scenarios on various environments including web browser and smartphone.</p><br>
+                        <p>A Coursera specialization is a series of courses built to master a skill. Each course has it's own certificate. The specialization certificate is delivered when all the courses are completed with success.</p>
+                    </div>
+                    <div class="training-body-courses">
+                    	<h3>Courses</h3>
+	                    <ol>
+                        	<li>Browser-based Models with TensorFlow.js
+                                <a title="Link to course" href="https://www.coursera.org/learn/browser-based-models-tensorflow?specialization=tensorflow-data-and-deployment" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/afc7f5f70a32389406f9ba146923e8eb" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Device-based Models with TensorFlow Lite
+                                <a title="Link to course" href="https://www.coursera.org/learn/device-based-models-tensorflow?specialization=tensorflow-data-and-deployment" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/dfabbb956a1618207311840aa5db93dc" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Data Pipelines with TensorFlow Data Services
+                                <a title="Link to course" href="https://www.coursera.org/learn/data-pipelines-tensorflow?specialization=tensorflow-data-and-deployment" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/ed040a9858416c71a5fd718ac01bd7b7" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Advanced Deployment Scenarios with TensorFlow
+                                <a title="Link to course" href="https://www.coursera.org/learn/advanced-deployment-scenarios-tensorflow?specialization=tensorflow-data-and-deployment" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/37d4e245a6e846ef53b382506bf1b3e6" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+        
+      	<!-- Filterable element -->
+      	<div class="filter advanced">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="training-title">
+                		<h2>Data Science</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                    </div>
+                    <div class="training-title-tags">
+                    	<div>
+                            <div class="tag">specialization</div>
+	    	          		<div class="tag">advanced</div>
+                		</div>
+                    	<div>
+                            <div class="tag">Johns Hopkins University</div>
+                            <div class="tag">Coursera</div>
+                		</div>
+                	</div>
+                    <div class="training-title-links">
+                        <h2>
+                            <a title="Link to specialization" href="https://www.coursera.org/specializations/jhu-data-science" target="_blank" >
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a title="Link to certificate" href="https://coursera.org/share/2fee8b2f1e72019e443ddf67eb68721c" target="_blank" >
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </h2>
+                	</div>
+                </div>
+                <div class="expandable-body">
+                	<div class="training-body-tags">
+                    	<h3>Tags</h3>
+    	          		<div class="tag">data science</div>
+    	          		<div class="tag">R</div>
+    	          		<div class="tag">RStudio</div>
+    	          		<div class="tag">data analysis</div>
+    	          		<div class="tag">data cleaning</div>
+    	          		<div class="tag">feature engineering</div>
+                    </div>
+                    <div class="training-body-summary">
+                    	<h3>Summary</h3>
+	                    <p>This Data Science Specialization is offered by the Johns Hopkins University on Coursera. The specialization covers the concept and tools required to navigate through the data science pipeline. It introduces R programming and RStudio.</p><br>
+                        <p>A Coursera specialization is a series of courses built to master a skill. Each course has it's own certificate. The specialization certificate is delivered when all the courses are completed with success.</p><br>
+                        <p style="margin-bottom:10px">Link to project: <a class="click" title="Link to website" href="projects.html?filter=datascience#capstone" target="_self">Capstone Project</a></p>
+                    </div>
+                    <div class="training-body-courses">
+                    	<h3>Courses</h3>
+	                    <ol>
+                        	<li>The Data Scientist’s Toolbox
+                                <a title="Link to course" href="https://www.coursera.org/learn/data-scientists-tools?specialization=jhu-data-science" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/fdf48685e54d2da3af22c370ca83fa15" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>R Programming
+                                <a title="Link to course" href="https://www.coursera.org/learn/r-programming?specialization=jhu-data-science" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/a8bf8dbdd7fb06a65cd273d9e514b04b" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Getting and Cleaning Data
+                                <a title="Link to course" href="https://www.coursera.org/learn/data-cleaning?specialization=jhu-data-science" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/9e5eddcee743fc45df270817a2dacff4" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Exploratory Data Analysis
+                                <a title="Link to course" href="https://www.coursera.org/learn/exploratory-data-analysis?specialization=jhu-data-science" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/ceae73cf93809b93c6d83f9966afd170" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Reproducible Research
+                                <a title="Link to course" href="https://www.coursera.org/learn/reproducible-research?specialization=jhu-data-science" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/b61c276069f805ee6a620d5c31305b3e" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Statistical Inference
+                                <a title="Link to course" href="https://www.coursera.org/learn/statistical-inference?specialization=jhu-data-science" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/95d5a29f6e62b2793139c691f54501b0" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Regression Models
+                                <a title="Link to course" href="https://www.coursera.org/learn/regression-models?specialization=jhu-data-science" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/88fd70a94b6fd047148d7ebe11e1993f" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Practical Machine Learning
+                                <a title="Link to course" href="https://www.coursera.org/learn/practical-machine-learning?specialization=jhu-data-science" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/4c38d8e29f537d3dbfdb99748a9dc816" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Developing Data Products
+                                <a title="Link to course" href="https://www.coursera.org/learn/data-products?specialization=jhu-data-science" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/4825a8d10bd2102a9636eb46d4063e14" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        	<li>Data Science Capstone
+                                <a title="Link to course" href="https://www.coursera.org/learn/data-science-project?specialization=jhu-data-science" target="_blank" >
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a title="Link to certificate" href="https://coursera.org/share/5f612a50bd4a5cc7f467b1220e933653" target="_blank" >
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+      
+      
+      
+      </div>
+      <!-- The filterable elements -->
+      
+      
+      <!-- --------------------------------------------- END PAGE CONTENT --------------------------------------------- --> 
+    </div>
+    
+    <!-- Footer -->
+    <div id="footer" class="footer">
+      <p class="copyright">© Copyright 2021 - Kangaroo.AI</p>
+      <p class="tagline">There is an Art to problem solving.</p>
+    </div>
+    
+  </div>
+  
+  <script>
+      $(function(){
+          $("#sidebar").load("nav.html");
+      });
+  </script> 
+  <script src="../src/js/particles.js"></script> 
+  <script src="../src/js/app.js"></script>
+  <script src="../src/js/scroll.js"></script>
+  <script src="../src/js/filterdiv.js"></script>
+  <script src="../src/js/expandable.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD ------------------------------------------------------------------------------------------ -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <!-- Description for search engines -->
+    <meta name="description" content="Data Scientist Freelance | Data Science is the science of extracting knowledge and insights from data." />
+    
+    <!-- Page title -->
+    <title>Kangaroo.AI | Data Science</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../src/img/favicon.png" />
+    
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/layout.css">
+    <link rel="stylesheet" href="../src/css/sidebar.css">
+    <link rel="stylesheet" href="../src/css/content.css">
+    
+    <!-- Font embeding -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Fontawesome.com kit's code -->
+    <script src="https://kit.fontawesome.com/436e3d6775.js" crossorigin="anonymous"></script>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<!-- BODY ------------------------------------------------------------------------------------------ -->
+<body>
+
+  <!-- Particules -->
+  <div id="particles-js" class="particules"></div>
+  
+  <!-- Site Container -->
+  <div id="site-container" class="site-container">
+
+    <!-- Scrool progress indicator -->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    
+    <!-- Header -->
+    <div id="header" class="header">
+        <img alt="Kangaroo.AI Brand Logo" src="../src/img/logo_1420x240.png">
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar"> 
+      <!-- Navigation bar --> 
+      <!-- end of Navigation bar --> 
+    </div>
+
+    <!-- Page content -->
+    <div id="content" class="content"> 
+      <!-- --------------------------------------------- INSERT PAGE CONTENT HERE --------------------------------------------- -->
+      
+      
+      <h1><img alt="Kangaroo Logo" src="../src/img/kangaroo-logo-250px.png"> Data <span>Science</span></h1>
+      <div class="quote">
+        <div class="quote-header">
+          <h2>Definition (one out of many)</h2>
+        </div>
+        <div class="quote-body">
+          <p>Science of extracting knowledge and insights from data</p>
+        </div>
+      </div>
+      <div class="block">
+        <p>There are numerous definitions of Data Science. The field itself is not yet mature enough to be very well defined.</p>
+        <p>Data Scientists, Analysts, Miners, Engineers... have themselves various (and confusing!) definitions and domains.</p>
+        <p style="margin-bottom:10px">This is why I like this simple and yet efficient definition.</p>
+        <p>From there, it's possible to build our own philosophy and skills as Data Scientists.</p>
+      </div>
+      <div class="flex-container">
+        <div class="flex-item">
+          <h2>Why data science?</h2>
+          <ul>
+            <li>Volume: more and more data are available</li>
+            <li>Velocity: new data are available every minute, second...</li>
+            <li>Variety: data comes in many forms</li>
+          </ul>
+        </div>
+        <div class="flex-item">
+          <h2>Data Science vs Artificial Intelligence</h2>
+          <!-- Trigger the Modal -->
+          <img id="myImg" src="../src/img/ai-vs-datascience.png" alt="AI versus Data Science schema" width="60%" height="auto">
+		  <!-- The Modal -->
+		  <div id="myModal" class="modal">
+
+		  	<!-- The Close Button -->
+	        <span class="close">&times;</span>
+
+			<!-- Modal Content (The Image) -->
+		    <img class="modal-content" id="img01">
+
+		    <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+		  </div> 
+          <p>Data Science and AI are not competitors or opposites.</p>
+          <p>They actually converge in many ways.</p>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="box">
+        <div class="box-header">
+          <h2>The data science process</h2>
+    	</div>
+	    <div class="box-body">
+          <ol>
+            <li>Form the question</li>
+            <li>Find or generate the data to answer this question</li>
+            <li>Explore, analyze, model the data</li>
+            <li>Draw conclusions, make reports, communicate</li>
+          </ol>
+        </div>
+        </div>
+        <div class="box">
+        <div class="box-header">
+          <h2>The data scientist</h2>
+    	</div>
+	    <div class="box-body">
+          <ul>
+            <li>Answers question with data</li>
+            <li>Has ability to solve problems</li>
+            <li>Examines data and provides insights</li>
+            <li>Communicates conclusions</li>
+          </ul>
+        </div>
+        </div>
+        <div class="box">
+        <div class="box-header">
+          <h2>Data Science Tools</h2>
+    	</div>
+	    <div class="box-body">
+          <ul>
+            <li>R and R Studio</li>
+            <li>Python</li>
+            <li>Coffee! <img src="../src/img/coffee-icon.png" width="30"></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="block">
+        <p>[<a class="click" title="Link to skills" href="./skills.html?filter=datascience" target="_self">Skills</a>]</p>
+        <p>[<a class="click" title="Link to trainings" href="./trainings.html?filter=all" target="_self">Trainings</a>]</p>
+      </div>
+      
+      
+      <!-- --------------------------------------------- END PAGE CONTENT --------------------------------------------- --> 
+    </div>
+    
+    <!-- Footer -->
+    <div id="footer" class="footer">
+      <p class="copyright">© Copyright 2021 - Kangaroo.AI</p>
+      <p class="tagline">There is an Art to problem solving.</p>
+    </div>
+    
+  </div>
+  
+  <script>
+      $(function(){
+          $("#sidebar").load("nav.html");
+      });
+  </script> 
+  <script src="../src/js/particles.js"></script> 
+  <script src="../src/js/app.js"></script>
+  <script src="../src/js/scroll.js"></script>
+  <script src="../src/js/modal.js"></script>
+
+</body>
+</html>

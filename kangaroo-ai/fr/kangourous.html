@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD ------------------------------------------------------------------------------------------ -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <!-- Description for search engines -->
+    <meta name="description" content="Ne donner pas de nourriture aux Kangourous sauvages!" />
+    
+    <!-- Page title -->
+    <title>Kangaroo.AI | Kangourous</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../src/img/favicon.png" />
+    
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/layout.css">
+    <link rel="stylesheet" href="../src/css/sidebar.css">
+    <link rel="stylesheet" href="../src/css/content.css">
+    
+    <!-- Font embeding -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Fontawesome.com kit's code -->
+    <script src="https://kit.fontawesome.com/436e3d6775.js" crossorigin="anonymous"></script>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<!-- BODY ------------------------------------------------------------------------------------------ -->
+<body>
+
+  <!-- Particules -->
+  <div id="particles-js" class="particules"></div>
+  
+  <!-- Site Container -->
+  <div id="site-container" class="site-container">
+
+    <!-- Scrool progress indicator -->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    
+    <!-- Header -->
+    <div id="header" class="header">
+        <img alt="Kangaroo.AI Brand Logo" src="../src/img/logo_1420x240.png">
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar"> 
+      <!-- Navigation bar --> 
+      <!-- end of Navigation bar --> 
+    </div>
+
+    <!-- Page content -->
+    <div id="content" class="content"> 
+      <!-- --------------------------------------------- INSERT PAGE CONTENT HERE --------------------------------------------- -->
+      
+      
+      <!-- KANGAROOS -->
+      <h1 id="trainings"><img alt="Kangaroo Logo" src="../src/img/kangaroo-logo-250px.png"> Kangaroo.<span>AI</span></h1>
+      
+      <div class="quote" style="width:75%">
+      	<div class="quote-header">
+        	<h2>Pourquoi Kangaroo.AI ?</h2>
+        </div>
+        <div class="quote-body">
+        	<p style="margin-top:10px; margin-bottom:10px">D'accord, je sais... Tout le monde se demande : <span style="font-weight:bold">mais pourquoi les kangourous !?</span><p>
+      		<p>Bien qu'il puisse sembler qu'il n'y a strictement aucun lien entre l'intelligence artificielle et les kangourous, il existe en réalité différentes raisons pour lesquelles j'ai fait ce choix (en plus du fait que j'aime les kangourous et comment leur nom sonne).<p>
+        </div>
+      </div>
+      
+      <div id="why-kangaroo" class="flex-container">
+      	
+        <div class="flex-item" style="margin: 0;">
+        	<div class="box">
+            <div class="box-header">
+                <h2>Penser autrement</h2>
+   			</div>
+    		<div class="box-body">
+                <p>Au moment où j'ai décidé de créer ce site internet, une requète avec "intelligence artificielle" dans mon moteur de recherche d'image préféré donnait une première page de résultats couverte à 90% par des images bleues foncées suggérant qu'un robot est soit en train de penser, soit conscient.</p><br>
+                <p>L'intelligence artificielle est trop souvent vue comme une technologie sombre et terrifiante, ce qui conduit à beaucoup d'incompréhension à son sujet.</p><br>
+                <p>J'en ai donc conlut que mon approche de l'IA devait être différente, utiliser des couleurs plus claires et reposer sur une image plus familière et inoffensive.</p>
+            </div>
+            </div>
+        </div>
+        
+        <div class="flex-item" style="margin: 0;">
+        	<div class="box">
+            <div class="box-header">
+                <h2>Fausse image</h2>
+    		</div>
+    		<div class="box-body">
+                <p>Les kangourous ne représentent pas une menace pour les humains dans des conditions normales. Il existe très peu de cas de kangourous attaquant des humains sans provocation.<p><br>
+                <p>Cela ressemble beaucoup, je crois, à l'IA : elle ne constitue pas une menace pour l'homme dans des conditions normales (c'est-à-dire tant que des objectifs éthiques sont poursuivis).</p>
+            </div>
+            </div>
+        </div>
+        
+        <div class="flex-item" style="margin: 0;">
+            <div class="box">
+            <div class="box-header">
+            	<h2>Nourriture et Données</h2>
+    		</div>
+    		<div class="box-body">
+                <p>Si vous allez un jour dans un endroit où vivent des kangourous sauvages, s'il-vous-plaît <a class="click" title="Lien vers le site" href="https://blog.nationalparks.nsw.gov.au/keep-wildlife-wild-dontfeedit/" target="_blank">ne les nourrissez pas</a> avec des carrottes ou d'autres nourritures appropriées ! Ils sont herbivores.</p><br>
+                <p>Il est tout aussi important de nourrir les algorithmes d'IA avec des donneés appropriées, en excluant les biais et les intentions non éthiques.</p>
+            </div>
+            </div>
+        </div>
+        
+      </div>
+      
+      
+      <!-- --------------------------------------------- END PAGE CONTENT --------------------------------------------- --> 
+    </div>
+    
+    <!-- Footer -->
+    <div id="footer" class="footer">
+      <p class="copyright">© Copyright 2021 - Kangaroo.AI</p>
+      <p class="tagline">La résolution des problèmes est un art.</p>
+    </div>
+    
+  </div>
+  
+  <script>
+      $(function(){
+          $("#sidebar").load("nav.html");
+      });
+  </script> 
+  <script src="../src/js/particles.js"></script> 
+  <script src="../src/js/app.js"></script>
+  <script src="../src/js/scroll.js"></script>
+
+</body>
+</html>

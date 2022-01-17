@@ -1,0 +1,7 @@
+{
+	"articles":[
+  		{"title":"My first article", "author":"Anna" },
+  		{"title":"My second article", "author":"Smith" },
+  		{"title":"My third article", "author":"Jones" }
+	]
+}

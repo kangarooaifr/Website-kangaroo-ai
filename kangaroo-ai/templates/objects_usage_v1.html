@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD ------------------------------------------------------------------------------------------ -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <!-- Page title -->
+    <title>Kangaroo.AI</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../src/img/favicon.png" />
+    
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/layout.css">
+    <link rel="stylesheet" href="../src/css/sidebar.css">
+    <link rel="stylesheet" href="../src/css/content.css">
+    
+    <!-- Font embeding -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Fontawesome.com kit's code -->
+    <script src="https://kit.fontawesome.com/436e3d6775.js" crossorigin="anonymous"></script>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<!-- BODY ------------------------------------------------------------------------------------------ -->
+<body>
+
+  <!-- Particules -->
+  <div id="particles-js" class="particules"></div>
+  
+  <!-- Site Container -->
+  <div id="site-container" class="site-container">
+
+    <!-- Scrool progress indicator -->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    
+    <!-- Header -->
+    <div id="header" class="header">
+        <img alt="Kangaroo.AI Brand Logo" src="../src/img/logo_1420x240.png">
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar"> 
+      <!-- Navigation bar --> 
+      <!-- end of Navigation bar --> 
+    </div>
+
+    <!-- Page content -->
+    <div id="content" class="content"> 
+      <!-- --------------------------------------------- INSERT PAGE CONTENT HERE --------------------------------------------- -->
+      
+      <h1><img alt="Kangaroo Logo" src="../src/img/kangaroo-logo-250px.png"> Artificial <span>Intelligence</span></h1>
+      
+      <div class="quote">
+        <div class="quote-header">
+          <h2>Quote</h2>
+        </div>
+        <div class="quote-body">
+          <p>This is an example of QUOTE</p>
+        </div>
+      </div>
+      
+      <div class="block">
+      
+        <p>This is an example of BLOCK</p><br>
+        
+        <p>Source: <a href="../en/about.html">Elements of AI</a></p>
+        
+      </div>
+      
+      <div class="flex-container">
+        <div class="flex-item">
+          <h2>Flex item 1</h2>
+          <p>This is an example of flex item</p>
+        </div>
+        <div class="flex-item">
+          <h2>Flex item 2</h2>
+          <p>This is an example of flex item</p>
+        </div>
+      </div>
+      
+       <div class="box">
+          <h2>Element BOX</h2>
+          <p>This is an example of BOX</p>
+        </div>
+      
+      
+            <!-- Control buttons -->
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')">Show all</button>
+          <button class="btn" onclick="filterSelection('datascience')">Data Science</button>
+          <button class="btn" onclick="filterSelection('ai')"> AI</button>
+        </div>
+        
+        <!-- The filterable elements -->
+        <div class="projectList">
+      <!-- Project card -->
+          <div class="project datascience">
+          	<div class="flex-container">
+              <div class="project-col">
+                <img alt="Project avatar" src="file:///D|/Kangaroo.AI/website/src/img/cognitive_bias_codex.png" width="200px">
+                <div>
+    	          <div class="tag">datascience</div>
+                </div>
+              </div>
+              <div class="project-col">
+                <h2>Trading Dashboard</h2>
+                <p>Some text goes here: this is a brief description of the projec and some more text so you wanna click on it and get more insight what's going on in there.</p>
+                <p>READ MORE</p>
+                <div class="dot-container">
+	              <span class="dot"></span>
+				  <span class="dot"></span>
+				  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end Project card -->
+          </div>
+      
+      
+      
+      
+      <!-- --------------------------------------------- END PAGE CONTENT --------------------------------------------- --> 
+    </div>
+    
+    <!-- Footer -->
+    <div id="footer" class="footer">
+      <p class="copyright">© Copyright 2021 - Kangaroo.AI</p>
+      <p class="tagline">There is an Art to problem solving.</p>
+    </div>
+    
+  </div>
+  
+  <script>
+      $(function(){
+          $("#sidebar").load("nav.html");
+      });
+  </script> 
+  <script src="../src/js/particles.js"></script> 
+  <script src="../src/js/app.js"></script>
+  <script src="../src/js/scroll.js"></script>
+
+</body>
+</html>

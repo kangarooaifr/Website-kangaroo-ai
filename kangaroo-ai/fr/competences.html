@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD ------------------------------------------------------------------------------------------ -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <!-- Description for search engines -->
+    <meta name="description" content="Machine Learning | Data Scientist freelance. Le meilleur moment pour commencer à régler des problemes serait maintenant!." />
+    
+    <!-- Page title -->
+    <title>Kangaroo.AI | Compétences</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../src/img/favicon.png" />
+    
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/layout.css">
+    <link rel="stylesheet" href="../src/css/sidebar.css">
+    <link rel="stylesheet" href="../src/css/content.css">
+    
+    <!-- Font embeding -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Fontawesome.com kit's code -->
+    <script src="https://kit.fontawesome.com/436e3d6775.js" crossorigin="anonymous"></script>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<!-- BODY ------------------------------------------------------------------------------------------ -->
+<body>
+
+  <!-- Particules -->
+  <div id="particles-js" class="particules"></div>
+  
+  <!-- Site Container -->
+  <div id="site-container" class="site-container">
+
+    <!-- Scrool progress indicator -->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    
+    <!-- Header -->
+    <div id="header" class="header">
+        <img alt="Kangaroo.AI Brand Logo" src="../src/img/logo_1420x240.png">
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar"> 
+      <!-- Navigation bar --> 
+      <!-- end of Navigation bar --> 
+    </div>
+
+    <!-- Page content -->
+    <div id="content" class="content"> 
+      <!-- --------------------------------------------- INSERT PAGE CONTENT HERE --------------------------------------------- -->
+      
+      
+      <h1><img alt="Kangaroo Logo" src="../src/img/kangaroo-logo-250px.png"> Data Science & IA <span>Compétences</span></h1>
+      
+      <!-- Control buttons -->
+      <div id="myBtnContainer">
+      	<button id="all" class="btn" onclick="filterSelection('all')">Tout</button>
+      	<button id="ai" class="btn" onclick="filterSelection('ai')">IA</button>
+        <button id="datascience" class="btn" onclick="filterSelection('datascience')">Data Science</button>
+      </div>
+      <div id="myBtnContainer2">
+      	<button class="btn" onclick="collapseAll()">Fermer tout</button>
+      	<button class="btn" onclick="expandAll()">Ouvrir tout</button>
+      </div>
+      
+      <!-- The filterable elements -->
+      <div class="filterList">
+      
+      	<!-- Filterable element -->
+      	<div id="ai" class="filter ai">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="training-title">
+                		<h2>IA</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                    </div>
+                </div>
+                <div class="expandable-body">
+                    <div class="training-body-summary">
+                    	<h3>Résumé</h3>
+                        <ul>
+                        	<li>Machine learning</li>
+                        	<li>Deep learning</li>
+                        </ul>
+				        <p>Une liste détaillée des <a class="click" title="Lien vers les formations" href="./formations.html?filter=ai" target="_self">formations et certificats</a> est disponible.</p>
+                    </div>
+                	<div class="training-body-tags">
+                    	<h3>Etiquettes</h3>
+    	          		<div class="tag">Réseau de Neurone</div>
+    	          		<div class="tag">TensorFlow</div>
+    	          		<div class="tag">Keras</div>
+    	          		<div class="tag">Jupyter</div>
+    	          		<div class="tag">Python</div>
+    	          		<div class="tag">Anaconda</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+        
+        <!-- Filterable element -->
+      	<div id="ai" class="filter datascience">
+        	<div class="expandable">
+        		<div class="expandable-header">
+                	<div class="training-title">
+                		<h2>Data Science</h2>
+                        <button class="btn-expand"><span><i class="fas fa-angle-double-right"></i></span></button>
+                    </div>
+                </div>
+                <div class="expandable-body">
+                    <div class="training-body-summary">
+                    	<h3>Résumé</h3>
+                        <ul>
+                        	<li>Collecte de données</li>
+                        	<li>Analyse de données</li>
+                        	<li>Tableaux de bord / synthèse</li>
+                        </ul>
+				        <p>Une liste détaillée des <a class="click" title="Lien vers les formations" href="./formations.html?filter=datascience" target="_self">formations et certificats</a> est disponible.</p>
+                    </div>
+                	<div class="training-body-tags">
+                    	<h3>Etiquettes</h3>
+    	          		<div class="tag">R</div>
+    	          		<div class="tag">R Studio</div>
+    	          		<div class="tag">Shiny App</div>
+    	          		<div class="tag">Shiny Dashboard</div>
+    	          		<div class="tag">Ggplot2</div>
+    	          		<div class="tag">Leaflet maps</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END // Filterable element -->
+      
+      </div>
+      <!-- The filterable elements -->
+      
+      <!-- --------------------------------------------- END PAGE CONTENT --------------------------------------------- --> 
+    </div>
+    
+    <!-- Footer -->
+    <div id="footer" class="footer">
+      <p class="copyright">© Copyright 2021 - Kangaroo.AI</p>
+      <p class="tagline">La résolution des problèmes est un art.</p>
+    </div>
+    
+  </div>
+  
+  <script>
+      $(function(){
+          $("#sidebar").load("nav.html");
+      });
+  </script> 
+  <script src="../src/js/particles.js"></script> 
+  <script src="../src/js/app.js"></script>
+  <script src="../src/js/scroll.js"></script>
+  <script src="../src/js/filterdiv.js"></script>
+  <script src="../src/js/expandable.js"></script>
+
+</body>
+</html>

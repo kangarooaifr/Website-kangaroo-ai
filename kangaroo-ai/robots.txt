@@ -1,0 +1,11 @@
+
+# Block folder for all agents
+User-agent: *
+Disallow: /templates/
+
+# Block the entire site from Go-http-client/1.1
+User-agent: Go-http-client/1.1
+Disallow: /
+
+# Link to sitemap
+Sitemap: http://www.kangaroo-ai.fr/sitemap.xml

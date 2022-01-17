@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD ------------------------------------------------------------------------------------------ -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <!-- Description for search engines -->
+    <meta name="description" content="Machine Learning and Data Science projects." />
+    
+    <!-- Page title -->
+    <title>Kangaroo.AI | Projects</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../src/img/favicon.png" />
+    
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/layout.css">
+    <link rel="stylesheet" href="../src/css/sidebar.css">
+    <link rel="stylesheet" href="../src/css/content.css">
+    
+    <!-- Font embeding -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Fontawesome.com kit's code -->
+    <script src="https://kit.fontawesome.com/436e3d6775.js" crossorigin="anonymous"></script>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<!-- BODY ------------------------------------------------------------------------------------------ -->
+<body>
+
+  <!-- Particules -->
+  <div id="particles-js" class="particules"></div>
+  
+  <!-- Site Container -->
+  <div id="site-container" class="site-container">
+
+    <!-- Scrool progress indicator -->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    
+    <!-- Header -->
+    <div id="header" class="header">
+        <img alt="Kangaroo.AI Brand Logo" src="../src/img/logo_1420x240.png">
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar"> 
+      <!-- Navigation bar --> 
+      <!-- end of Navigation bar --> 
+    </div>
+
+    <!-- Page content -->
+    <div id="content" class="content"> 
+      <!-- --------------------------------------------- INSERT PAGE CONTENT HERE --------------------------------------------- -->
+      
+      
+       <h1><img alt="Kangaroo Logo" src="../src/img/kangaroo-logo-250px.png"> Project <span>Portfolio</span></h1>
+       
+       <!-- Control buttons -->
+        <div id="myBtnContainer">
+          <button id="all" class="btn" onclick="filterSelection('all')">Show all</button>
+          <button id="datascience" class="btn" onclick="filterSelection('datascience')">Data Science</button>
+          <button id="ai" class="btn" onclick="filterSelection('ai')"> AI</button>
+        </div>
+        
+        <!-- The filterable elements -->
+        <div class="filterList">
+        
+		  <!-- Project card -->
+          <div class="filter ai">
+          <div class="project">
+          	<div class="flex-container">
+              <div class="project-col">
+                <img alt="Project avatar" src="../src/img/project-avatar-titanic.jpg" width="200px">
+                <div>
+	              <div class="tag">ai</div>
+	              <div class="tag">machine learning</div>
+	              <div class="tag">kaggle</div>
+	              <div class="tag">competition</div>
+                </div>
+              </div>
+              <div class="project-col">
+                <h2>Titanic - Kaggle Competition</h2>
+                <p>The Kaggle 'Titanic - Machine Learning from Disaster' competition is a must-do when it comes to start with ML competitions and familiarize oneself with the Kaggle platform and community.<br>
+                The competition is simple: use machine learning to create a model that predicts which passengers survived the Titanic shipwreck.</p>
+                <p>Rank: Top 3% (921st of 37074 as of May 2021)</p>
+                <p>Link: <a class="click" title="Link to website" href="https://www.kaggle.com/c/titanic" target="_blank">Titanic Competition</a></p>
+                <div class="dot-container">
+	              <span class="dot"></span>
+				  <span class="dot"></span>
+				  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- end Project card -->
+        
+		  <!-- Project card -->
+          <div class="filter ai">
+          <div class="project">
+          	<div class="flex-container">
+              <div class="project-col">
+                <img alt="Project avatar" src="../src/img/project-avatar-sydney-rain.jpg" width="200px">
+                <div>
+    	          <div class="tag">ai</div>
+    	          <div class="tag">machine learning</div>
+    	          <div class="tag">ensembling</div>
+                </div>
+              </div>
+              <div class="project-col">
+                <h2>Sydney Rain Forecast</h2>
+                <p>Predict whether or not it will rain tomorrow based on 140.000+ daily weather obervation examples captured all around Australia by the Australian Feredal Bureau of Meteorology (BOM) from 2008 to 2017.</p>
+                <p>2020 Accuracy: 79% (289 predictions OK / 366)</p>
+                <p>Link: <a class="click" title="Link to website" href="https://www.kaggle.com/filhypedeeplearning/code" target="_blank">Rain Tomorrow</a></p>
+                <div class="dot-container">
+	              <span class="dot"></span>
+				  <span class="dot"></span>
+				  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- end Project card -->
+        
+		  <!-- Project card --
+          <div class="filter datascience">
+          <div class="project">
+          	<div class="flex-container">
+              <div class="project-col">
+                <img alt="Project avatar" src="../src/img/project-avatar-trading-dashboard.jpg" width="200px">
+                <div>
+    	          <div class="tag">datascience</div>
+    	          <div class="tag">dashboard</div>
+    	          <div class="tag">shiny</div>
+                </div>
+              </div>
+              <div class="project-col">
+                <h2>Trading Dashboard</h2>
+                <p>This project is an example of the Shiny / Shinydashboard framework usage including interactive plots.</p>
+                <p>The project has a ShinyApp available online. Link: <a class="click" title="Link to website" href="https://kangaroo-ai.shinyapps.io/TradingDashboard/" target="_blank">Trading Dashboard</a></p>
+                <p style="font-style: italic">Note: The app might be slow to start if the cloud infrastructure has put it into sleep state.</p>
+                <div class="dot-container">
+	              <span class="dot"></span>
+				  <span class="dot"></span>
+				  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          -- end Project card -->
+        
+		  <!-- Project card -->
+          <div class="filter datascience">
+          <div id="capstone" class="project">
+          	<div class="flex-container">
+              <div class="project-col">
+                <img alt="Project avatar" src="../src/img/project-avatar-capstone.jpg" width="200px">
+                <div>
+    	          <div class="tag">datascience</div>
+    	          <div class="tag">nlp</div>
+                </div>
+              </div>
+              <div class="project-col">
+                <h2>Data Science Capstone Project</h2>
+                <p>This project was part of the Johns Hopkins University Data Science Specialization on Coursera. Based on a text dataset containing millions of lines, and while user is typing a text input, the model predicts what the next word is likely to be.</p>
+                <p>The project has a ShinyApp available online. Link: <a class="click" title="Link to website" href="https://kangaroo-ai.shinyapps.io/CapstoneProject/" target="_blank">Capstone Project</a></p>
+                <p style="font-style: italic">Note: The app might be slow to start if the cloud infrastructure has put it into sleep state.</p>
+                <div class="dot-container">
+	              <span class="dot"></span>
+				  <span class="dot"></span>
+				  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- end Project card -->
+        
+		  <!-- Project card -->
+          <div class="filter datascience ai">
+          <div class="project">
+          	<div class="flex-container">
+              <div class="project-col">
+                <img alt="Project avatar" src="../src/img/project-avatar-tabular-playground-mar21.jpg" width="200px">
+                <div>
+    	          <div class="tag">datascience</div>
+    	          <div class="tag">AI</div>
+    	          <div class="tag">kaggle</div>
+    	          <div class="tag">competition</div>
+                </div>
+              </div>
+              <div class="project-col">
+                <h2>Tabular Playground Series - Mar 2021</h2>
+                <p>The Tabular Playground Series is a set of competition on the Kaggle platform. On a monthly basis, a new challenge is proposed to the community.</p>
+                <p>Rank: Top 43% (633rd of 1495)</p>
+                <p>Link: <a class="click" title="Link to website" href="https://www.kaggle.com/c/tabular-playground-series-mar-2021" target="_blank">Tabular Playground Series - Mar 2021</a></p>
+                <div class="dot-container">
+	              <span class="dot"></span>
+				  <span class="dot"></span>
+				  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- end Project card -->
+        
+		  <!-- Project card -->
+          <div class="filter datascience">
+          <div class="project">
+          	<div class="flex-container">
+              <div class="project-col">
+                <img alt="Project avatar" src="../src/img/project-avatar-housing.jpg" width="200px">
+                <div>
+    	          <div class="tag">datascience</div>
+    	          <div class="tag">map</div>
+                </div>
+              </div>
+              <div class="project-col">
+                <h2>Housing Project</h2>
+                <p>The housing transaction data are provided by the French government through an open source license. This is an example of an interactive map with the last transactions and per square meter price.</p>
+                <div class="dot-container">
+	              <span class="dot"></span>
+				  <span class="dot"></span>
+				  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- end Project card -->
+        
+		  <!-- Project card -->
+          <div class="filter ai">
+          <div class="project">
+          	<div class="flex-container">
+              <div class="project-col">
+                <img alt="Project avatar" src="../src/img/project-avatar-android-sensors.jpg" width="200px">
+                <div>
+    	          <div class="tag">ai</div>
+    	          <div class="tag">machine learning</div>
+    	          <div class="tag">android</div>
+    	          <div class="tag">human activity</div>
+                </div>
+              </div>
+              <div class="project-col">
+                <h2>Android Sensors</h2>
+                <p>Goal of this personal project is to build a dataset using a custom android app that captures the smartphone sensors (gyroscope, accelerometer, .?) during different human activities (walk, run, bike...).</p>
+                <p>Next step will be to build a machine learning model that detects the activity through the smartphone app.</p>
+                <div class="dot-container">
+	              <span class="dot"></span>
+				  <span class="dot"></span>
+				  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- end Project card -->
+        
+		  <!-- Project card -->
+          <div class="filter ai">
+          <div class="project">
+          	<div class="flex-container">
+              <div class="project-col">
+                <img alt="Project avatar" src="../src/img/project-avatar-espresso-or-longblack.jpg" width="200px">
+                <div>
+    	          <div class="tag">ai</div>
+    	          <div class="tag">machine learning</div>
+    	          <div class="tag">transfer learning</div>
+                </div>
+              </div>
+              <div class="project-col">
+                <h2>Espresso or Longblack?</h2>
+                <p>This project deals with how to handle a small image dataset with transfer learning.<br>
+                The dataset and notebook are available on Kaggle.</p>
+                <p>Link: <a class="click" title="Link to website" href="https://www.kaggle.com/filhypedeeplearning/espresso-or-longblack" target="_blank">Espresso or Longblack?</a></p>
+                <div class="dot-container">
+	              <span class="dot"></span>
+				  <span class="dot"></span>
+				  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- end Project card -->
+          
+        </div> 
+        <!-- End of filterable elements -->
+      
+      <!-- --------------------------------------------- END PAGE CONTENT --------------------------------------------- --> 
+    </div>
+    
+    <!-- Footer -->
+    <div id="footer" class="footer">
+      <p class="copyright">© Copyright 2021 - Kangaroo.AI</p>
+      <p class="tagline">There is an Art to problem solving.</p>
+    </div>
+    
+  </div>
+  
+  <script>
+      $(function(){
+          $("#sidebar").load("nav.html");
+      });
+  </script> 
+  <script src="../src/js/particles.js"></script> 
+  <script src="../src/js/app.js"></script>
+  <script src="../src/js/scroll.js"></script>
+  <script src="../src/js/filterdiv.js"></script>
+  <script>
+    (function () {
+      // get the query string from url
+      const params = new URLSearchParams(location.search);
+      const query = params.get("filter");
+      // use the query string to call filter selection
+	  filterSelection(query)
+    })();
+  </script>
+
+</body>
+</html>
