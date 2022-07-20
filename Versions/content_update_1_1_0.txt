@@ -1,55 +1,67 @@
 
 
-Update
---------------------------------------------------------------------------------
-Version 1.1.0
-
-
-Data Science
+Version 1.2.0
 --------------------------------------------------------------------------------
 
-- 1ére expérience avec l'analyse des données en tant que support technique.
-Debug = data mining, il faut explorer, trier, analyser des données (logs, fichiers résultats, xml de communication,
-requete en base, ...) pour en tirer une 'intuition' sur le comportement défectueux du logiciel
-et qualifier le problème en vue de modifier/corriger le code en cause.
+Look & feel :
+-----------
 
-Tech. Support has same process as Data Science:
-Formulate the pb/question, find the accurate data... (voir site / Data Science en bas dans processus)
-
-- 2ème expérience : Coexistence Meeting avec tous les métiers (Support, Dev, QA, Tech Sales, Services)
->> Synthése annuelle des incidents Support liés au produit. Data exploration, data vizualisation,
-présentation d'un dashboard avec indicateurs.
-
-- 3ème expérience : Travail sur les indicateurs au QA, get away from the target date syndrom pour
-basculer dans un systèmes de mesure de l'exposition : rouge = exposée sans plan, yellow = exposed with plan,
-green = no exposure, under control.
-Distance TD != exposition
-Distance TD | Remaining effort | Problems without plan = exposure
->> much better anticipation, so that program closure are under control
+- déplacer le menu vers le haut (show / hide en fonction du défilement)
+- ajouter un bouton up en fonction du défilement
+- reorganiser pour supprimer le frame du menu
+- footer, ajouter lien linkedIn, FreeWork et mentions légales
 
 
-Ajouter
---------------------------------------------------------------------------------
-- lien vers github
-- lien vers freelance-info
-...
+Home / Accueil : 
+--------------
+
+- Ajouter derniers updates projets
+- Ajouter "article" de blog avec news
+- Ajouter articles Medium
+- Ajouter metrics GitHub
 
 
-Formation
---------------------------------------------------------------------------------
-- Ajouter MLOps
-- Virer Elements of AI et AI for Everyone (garder Agile)
+Data Science :
+------------
+
+- Look & feel one page avec séparations
+- Vérifier le contenu
+- Ajouter des aspects data analysis ?
 
 
-Compétences
---------------------------------------------------------------------------------
-- mettre la stack avec niveau de maitrise
-- mettre les sujets (Data Analysis, Exploration, Modeling, MLOps, Data Pipeline, Monitoring, Data Drift, Debug, QA)
-- mettre le schema MLOps
+IA / Machine Learning :
+---------------------
+
+- Revoir le contenu
+- Préciser que le but n'est pas d'être exhaustif
+- Proposer des liens pour approfondir
 
 
-Home / Accueil
---------------------------------------------------------------------------------
-- Transformer pour avoir les derniers updates... (projets?)
-- Lien vers mon CV / LinkedIn
-- Lien vers "article" de blog avec news
+Profil :
+------
+
+- Remplacer par une iframe viewer de PDF
+- Retirer la page compétences
+- Conserver formations, peut-être une gallerie d'image avec lien
+(Ajouter MLOps, virer Elements of AI et AI for Everyone, garder Agile)
+
+Projets :
+-------
+
+- Remplacer par des projets card plus sexy
+- 1 page par projet ensuite, avec iframe pour démo
+
+
+A Propos :
+--------
+- vérifier le contenu / mentions légales
+- kangourou, look one page
+
+
+Contact :
+-------
+- Ajouter un lien email
+- Réduire le formulaire, ne le laisser apparaitre que sur click
+- Ajouter liens vers les plateformes (GitHub, data.gouv.fr, ...)
+sous forme de card pour en ajouter facilement !
+

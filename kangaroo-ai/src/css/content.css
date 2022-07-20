@@ -3,133 +3,102 @@
 
 /* ----- Colors ------------------------------------------------------ */
 :root {
-	
+
 	/* Define color variables */
 	--grey: #5b5b5b;
 /*	--text-grey: #505050;*/
 	--text-grey: #5a5a5a;
 	--gold: #aea587;
-	
+
 	--text-blue: #91adc2;
 	--sidebar: #aea587;
-	
+
 	--bkgd-gold: rgba(174, 165, 135, 0.5);
-	
+
 }
 
 
 /* ----- Fonts & Text ------------------------------------------------------ */
 html, body {
-	
+
 	/* Set default font and size */
 	font-family: 'Inter', sans-serif;
 	font-size: 10px;
-	
+
 }
 
-/* --- Footer Text Styles --- */
-.copyright {
-	
-	color: rgba(113, 115, 116, 0.4);
-	
-	position: absolute;
-  	bottom: 3vh;
-  	left: 2vw;
-	
-	user-select: none;
-}
-
-.tagline {
-	
-	font-size: 2.4rem;
-	font-weight: 500;
-	color: var(--text-grey);
-	
-	position: absolute;
-  	bottom: 3vh;
-  	right: 2vw;
-	
-	user-select: none;
-	
-}
 
 /* --- Responsive fonts --- */
 @media screen and (min-width: 1200px) {
-	
+
 	h1 {
 		font-size: 4rem;
 	}
-	
+
 	h1 img {
 		width: 56px;
 	}
-	
+
 	h2 {
 		font-size: 1.6rem;
 	}
-	
+
   	p, li, button, a, label, input, textarea {
 		font-size: 1.4rem;
 	}
-	
+
 	.small {
 		font-size: 1.2rem;
 	}
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1199px) {
-	
+
 	h1 {
 		font-size: 3rem;
 	}
-	
+
 	h1 img {
 		width: 48px;
 	}
-	
+
 	h2 {
 		font-size: 1.4rem;
 	}
-	
+
   	p, li, button, a, label, input, textarea {
 		font-size: 1.2rem;
 	}
-	
+
 	.small {
 		font-size: 1.2rem;
 	}
-	
-	.tagline {
-		font-size: 1.8rem;
-	}
+
 }
 
 
 @media screen and (max-width: 799px) {
-	
+
 	h1 {
 		font-size: 2rem;
 	}
-	
+
 	h1 img {
 		width: 32px;
 	}
-	
+
 	h2 {
 		font-size: 1.2rem;
 	}
-	
+
   	p, li, button, a, label, input, textarea {
 		font-size: 1rem;
 	}
-	
+
 	.small {
 		font-size: 1rem;
 	}
-	
-	.tagline {
-		font-size: 1.2rem;
-	}
+
 }
 
 
@@ -139,38 +108,38 @@ h1 {
 }
 
 h1 span {
-	
+
 	color: var(--gold);
 	font-weight: 300;
-	
+
 }
 
 
 /* --- paragraph --- */
 p {
-	
+
 	line-height: 1.5;
 	margin: 0;
-	
+
 	text-align: justify;
 	text-justify: inter-word;
-	
+
 }
 
 /* --- unordered list --- */
 ul {
-	
+
 	list-style-type: circle;
 	padding: 0 0 0 1vw;
-	
+
 }
 
 /* --- ordered list --- */
 ol {
-	
+
 	list-style-type: decimal;
 	padding: 0 0 0 2vw;
-	
+
 }
 
 /* --- links -- */
@@ -197,7 +166,7 @@ a:hover {
 a:active {
   color: var(--gold);
   text-decoration: underline;
-} 
+}
 
 .source:link {
 	border: 1px solid #363636;
@@ -225,6 +194,25 @@ a:active {
 
 .click {
 	border-bottom: 1px dashed;
+}
+
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
 }
 
 /* ----- Link class: TOOLTIP ------------------------------------------------------ */
@@ -262,33 +250,33 @@ a.tooltip:hover span {
 
 /* Style the buttons */
 .btn {
-	
+
 	border: 1px solid #363636;
 	border-radius: 10px;
   	color: black;
 	background-color: rgba(255, 255, 255, 0.5);
 	cursor: pointer;
-	
+
 	padding: 10px;
 	margin-bottom: 20px;
-	
+
 	transition: 0.2s
 }
 
 /* Add gold background on mouse-over */
 .btn:hover {
-	
+
   background-color: var(--gold);
   box-shadow: 0 0 5px rgba(33,33,33,.2);
-  
+
 }
 
 /* Add a dark background to the active button */
 .btn.active {
-	
+
   background-color: var(--grey);
   color: white;
-  
+
 }
 
 
@@ -296,80 +284,80 @@ a.tooltip:hover span {
 
 /* --- Container --- */
 .form-container {
-	
+
 	margin: 0px 20px 0px 20px;
 	padding: 20px;
-  
+
 	border: 1px solid grey;
   	border-radius: 10px;
   	background-color: rgba(255, 255, 255, 0.5);
-  	
-} 
+
+}
 
  /* Style inputs with type="text", select elements and textareas */
 input[type=text],input[type=email], select, textarea {
-	
+
   width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
+  padding: 12px; /* Some padding */
   border: 1px solid grey; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  
+
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-	
+
   background-color: var(--text-blue);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  
+
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-	
+
   background-color: var(--gold);
-  
+
 }
 
 /* ----- Home ------------------------------------------------------ */
 
 .home-container {
-	
+
 	position: relative;
 	/*margin-top: 5vh;*/
 }
 
 .home-img {
-	
-	position: absolute;	
+
+	position: absolute;
 	/*height: 50vh;
 
 	margin-left: 5vw;
 	margin-top: 10vh; -- BACKUP -- */
-	
+
 	height: 50vh;
 
 	margin-left: 3vw;
 	margin-top: 8vh;
-	
+
 }
 
 .home-quote {
-	
+
 	position: absolute;
 	/*margin-top: 5vh;
 	margin-left: -3vw; -- bACKUP -- */
-	
+
 	margin-left: 8vw;
 	margin-top: 20vh;
-	
+
 }
 
 
@@ -453,23 +441,23 @@ input[type=submit]:hover {
   .modal-content {
     width: 100%;
   }
-} 
+}
 
 
 /* ----- Layout class: FLEX ------------------------------------------------------ */
 
 .flex-container {
-	
+
 	display: flex;
 	flex-direction: row;
-	
+
 }
 
 .flex-item {
-	
+
 	flex: 1;
 	margin: 1vw;
-	
+
 }
 
 .flex-item img
@@ -481,20 +469,20 @@ input[type=submit]:hover {
 /* ----- Element class: TAG ------------------------------------------------------ */
 
 .tag {
-	
+
 	display: inline-block;
-	
+
 	border: 1px solid #363636;
 	border-radius: 10px;
   	color: black;
 	background-color: transparent;
 	text-decoration: none;
 	padding: 1px 8px;
-	
+
 	margin-top: 10px;
-	
+
 	font-size: 1rem;
-	
+
 }
 
 
@@ -511,54 +499,54 @@ input[type=submit]:hover {
 /* ----- Element class: QUOTE ------------------------------------------------------ */
 
 .quote {
-	 
+
 	/* display (so that size fits to content */
 	display: inline-block;
-	
+
 	/* margin & padding */
 	margin: 1vw;
 
 }
 
 .quote-header {
-	
+
 	/* size */
 	height: 25%;
-	
+
 	/* margin & padding */
 	padding: 10px;
-	
+
 	/* style */
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 10px 10px 0 0;
-	
+
 }
 
 .quote-header h2 {
-	
+
 	margin: 0;
-	
+
 }
 
 .quote-body {
-	
+
 	/* Position must be relative to absolutely position :after */
 	position:relative;
-	
+
 	/* margin & padding */
 	padding: 10px;
-	
+
 	/* style */
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 0 0 10px 10px;
-	
+
 }
 
 .quote-body:after {
-	
+
     content:''; /* Required to display content */
     position: absolute; /* Sets the position absolute to the top div */
-    top: 0; 
+    top: 0;
     left: 30%;
     margin-left: -10px; /* Set margin equal to border px */
     width: 0;
@@ -567,129 +555,129 @@ input[type=submit]:hover {
     border-top: solid 10px rgba(255, 255, 255, 0.4); /* Creates the notch */
     border-left: solid 10px transparent; /* Creates triangle effect */
     border-right: solid 10px transparent; /* Creates triangle effect */
-	
+
 }
 
 
 /* ----- Element class: BOX ------------------------------------------------------ */
 
 .box {
-	
+
 	/* margin & padding */
 	margin: 1vw;
-	
+
 	/* style */
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 10px;
 	border: 1px solid grey;
 	border-bottom: 10px solid var(--text-blue);
-	
+
 	/* transition */
 	transition: box-shadow .3s;
 	transition: border-bottom .3s;
-	
+
 }
 
 .box:hover {
-	
+
 	box-shadow: 0 0 11px rgba(33,33,33,.2);
 	border-bottom: 10px solid black;
-	
+
 }
 
 .box-header {
-	
+
 	/* size */
 	/*height: 15%;*/
-	
+
 	/* margin & padding */
 	padding: 1px 10px 1px 10px;
 	/*margin-bottom: 10px;*/
-	
+
 	/* style */
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 10px 10px 0px 0px;
-	
+
 }
 
 .box-body {
-	
+
 	padding: 10px;
-	
+
 }
 
 .box h2{
-	
+
 	color: var(--gold);
-	
+
 }
 
 
 /* ----- Element class: FILTERS ------------------------------------------------------ */
 
 .filterList {
-	
+
 	overflow: hidden;
-	
+
 }
 
 .filter {
-	
+
 	display: none; /* hidden by default */
-	
+
 }
 
 
 .show {
-	
+
 	/* The "show" class is added to the filtered elements */
-	display: block; 
-	
+	display: block;
+
 }
 
 
 /* ----- Element class: PROJECTS ------------------------------------------------------ */
 
 .project {
-	
+
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 5px;
 	border: 1px solid grey;
 	border-top: 5px solid var(--text-blue);
-	
+
 	padding: 10px;
 	margin-bottom: 20px;
-	
+
 	transition: 0.2s;
-	
+
 }
 
 .project:hover {
-	
+
 	box-shadow: 0 0 11px rgba(33,33,33,.2);
 	border-top: 5px solid var(--gold);
-	
+
 }
 
 .project-col {
-	
+
 	display: flex;
 	flex-direction: column;
-	
+
 	position: relative;
-	
+
 	padding: 10px;
-	
+
 }
 
 .project-col p {
-	
+
 	margin-bottom: 20px;
-	
+
 }
 
 .dot-container {
-	
+
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
@@ -709,60 +697,60 @@ input[type=submit]:hover {
 /* ----- Element class: EXPANDABLE ------------------------------------------------------ */
 
 .expandable {
-	
+
 	/* borders */
 	border-radius: 10px;
 	border: 1px solid grey;
-	
+
 	/* margin & padding */
 	margin-bottom: 10px;
-	
+
 	/* transition */
 	transition: 0.2s;
-	
+
 }
 
 .expandable:hover {
-	
+
 	/* shadow */
 	box-shadow: 0 0 5px rgba(33,33,33,.3);
-	
+
 }
 
 .expandable-header {
-	
+
 	/* box */
 	display: flex;
 	flex-direction: row;
-	
+
 	/* size */
 	height: 25%;
-	
+
 	/* margin & padding */
 	padding: 10px;
-	
+
 	/* style */
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 10px 10px 10px 10px;
-	
+
 	/* transition */
 	transition: border-radius 0.2s ease-out;
-	
+
 }
 
 .expandable-body {
-	
-	/* collapsed by default */	
+
+	/* collapsed by default */
 	max-height: 0;
   	overflow: hidden;
-	
+
 	/* padding 0px by default (10px when expanded) */
 	padding: 0px;
-	
+
 	/* style */
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 0 0 10px 10px;
-	
+
 	/* transition */
 	transition: max-height 0.2s ease-out, padding 0.2s ease-out;
 }
@@ -814,88 +802,88 @@ input[type=submit]:hover {
 /* ----- Content class: TRAINING (inside EXPANDABLE) ------------------------------------------------------ */
 
 .training-title {
-	
+
 	flex: 70%;
-	
+
 }
 
 .training-title h2 {
-	
+
 	display: inline-block;
-	
+
 }
 
 .training-title-tags {
-	
+
 	flex:20%;
-	
+
 	display: flex;
 	flex-direction: column;
-	
+
 }
 
 .training-title-tags .tag {
-	
+
 	margin-top: 5px;
-	
+
 }
 
 .training-title-links {
-	
+
 	flex:10%;
-	
+
 	text-align: right;
 	padding-right: 10px;
 }
 
 .training-title-links a {
-	
+
 	margin-left: 10px;
 	color: black;
 	text-decoration: none;
-	
+
 }
 
 .training-title-links a:hover {
-	
+
 	color: var(--gold);
 
 }
 
 .training-body-tags {
-	
+
 	flex: 20%;
 	margin: 10px;
-	
+
 }
 
 .training-body-summary {
-	
+
 	flex: 50%;
-	
+
 	margin: 10px;
-	
+
 }
 
 .training-body-courses {
-	
+
 	flex: 30%;
 	margin: 10px;
-	
+
 	text-overflow: ellipsis;
-	
+
 }
 
 .training-body-courses a {
-	
+
 	margin-left: 10px;
 	color: black;
 	text-decoration: none;
-	
+
 }
 
 .training-body-courses a:hover {
-	
+
 	color: var(--gold);
 
 }
@@ -904,16 +892,16 @@ input[type=submit]:hover {
 /* ----- Content class: EXPERIENCE (inside EXPANDABLE) ------------------------------------------------------ */
 
 .experience-title {
-	
+
 	flex: 80%;
-	
+
 }
 
 .experience-title h2 {
-	
+
 	display: inline-block;
 	margin-bottom: 0;
-	
+
 }
 
 .experience-title .btn-expand{
@@ -921,53 +909,53 @@ input[type=submit]:hover {
 }
 
 .experience-title-tags {
-	
+
 	flex:20%;
-	
+
 	display: flex;
 	flex-direction: column;
-	
+
 }
 
 .experience-title-tags .tag {
-	
+
 	margin-top: 5px;
-	
+
 }
 
 
 .experience-body {
-	
+
 	display: flex;
 	flex-direction: row;
-	
+
 }
 
 .experience-body-tags {
-	
+
 	flex: 20%;
 	margin: 10px;
-	
+
 }
 
 .experience-body-summary {
-	
+
 	flex: 80%;
 	margin: 10px;
-	
+
 }
 
 .experience-body-details {
-	
+
 	flex: 30%;
 	margin: 10px;
 	padding: 10px;
-	
+
 	text-overflow: ellipsis;
-	
+
 	background-color: var(--bkgd-gold);
 	border-radius: 5px;
-	
+
 }
 
 .experience-body-details span {
@@ -975,16 +963,15 @@ input[type=submit]:hover {
 }
 
 .experience-body-details a {
-	
+
 	margin-left: 10px;
 	color: black;
 	text-decoration: none;
-	
+
 }
 
 .experience-body-details a:hover {
-	
+
 	color: var(--gold);
 
 }
-

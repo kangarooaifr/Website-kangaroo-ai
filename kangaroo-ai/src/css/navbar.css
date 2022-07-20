@@ -1,0 +1,122 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+.nav-container {
+
+  position: relative;
+  margin-left: auto;
+  margin-right: -50px;
+  width: 68%;
+  height: 50px;
+  top: 40px;
+
+  background-color: white;
+  border-radius: 25px;
+
+  transition: all 1.5s;
+
+}
+
+.nav-container-collapsed {
+
+  position: relative;
+  margin-left: auto;
+  margin-right: -50px;
+  width: 50px;
+  height: 50px;
+  top: 40px;
+
+  background-color: white;
+  border-radius: 0 25px 25px 0;
+
+  border-left: solid grey;
+
+  transition: all 1.5s;
+
+}
+
+
+.nav-menu {
+
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.25s linear,opacity 0.25s linear;
+  transition-delay: 1s;
+
+}
+
+.nav-menu li {
+
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+.nav-menu li:hover {
+
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  transition: 0.25s;
+
+}
+
+.nav-menu li a strong {
+
+  position: relative;
+  top: 10%;
+
+}
+
+.nav-menu-collapsed {
+
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s linear,opacity 0.2s linear;
+
+}
+
+.nav-menu-collapsed li {
+
+  display: inline;
+
+}
+
+/* Style the button that is used to open the sidepanel */
+.navbtn {
+
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 5px;
+
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+
+  background-color: transparent;
+
+}
+
+.navbtn:hover {
+  color: grey;
+}
